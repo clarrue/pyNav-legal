@@ -4,10 +4,10 @@ Ce dépôt contient les documents légaux de l'application **PyNav** (pypilot re
 
 ## 📄 Documents disponibles
 
-- **CGU** (Conditions Générales d'Utilisation) - [🇫🇷 Français](https://VOTRE-USERNAME.github.io/pyNav-legal/cgu-fr.html)
-- **Terms and Conditions** - [🇬🇧 English](https://VOTRE-USERNAME.github.io/pyNav-legal/terms-en.html)
-- **Politique de Confidentialité** - [🇫🇷 Français](https://VOTRE-USERNAME.github.io/pyNav-legal/privacy-fr.html)
-- **Privacy Policy** - [🇬🇧 English](https://VOTRE-USERNAME.github.io/pyNav-legal/privacy-en.html)
+- **CGU** (Conditions Générales d'Utilisation) - [🇫🇷 Français](https://clarrue.github.io/pyNav-legal/cgu-fr.html)
+- **Terms and Conditions** - [🇬🇧 English](https://clarrue.github.io/pyNav-legal/terms-en.html)
+- **Politique de Confidentialité** - [🇫🇷 Français](https://clarrue.github.io/pyNav-legal/privacy-fr.html)
+- **Privacy Policy** - [🇬🇧 English](https://clarrue.github.io/pyNav-legal/privacy-en.html)
 
 ## 🚀 À propos de PyNav
 
