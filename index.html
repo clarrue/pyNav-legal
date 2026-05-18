@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PyNav - Documents légaux</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        .content {
+            padding: 40px;
+        }
+        .intro {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        .doc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .doc-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 25px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        .doc-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+            border-color: #667eea;
+        }
+        .doc-card h3 {
+            color: #1e3c72;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+        .doc-card p {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+        .flag {
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #6c757d;
+            border-top: 1px solid #e9ecef;
+        }
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2em;
+            }
+            .content {
+                padding: 20px;
+            }
+            .doc-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚓ PyNav</h1>
+            <p>Pypilot Remote Control & NMEA Display</p>
+        </div>
+
+        <div class="content">
+            <div class="intro">
+                <p><strong>Bienvenue</strong> sur la page des documents légaux de PyNav.</p>
+                <p>PyNav est une application Android de contrôle à distance pour le système de pilotage automatique open-source pypilot, avec affichage avancé des données NMEA.</p>
+            </div>
+
+            <div class="section">
+                <h2>📄 Documents légaux</h2>
+                <div class="doc-grid">
+                    <a href="cgu-fr.html" class="doc-card">
+                        <h3><span class="flag">🇫🇷</span> CGU</h3>
+                        <p>Conditions Générales d'Utilisation en français</p>
+                    </a>
+
+                    <a href="terms-en.html" class="doc-card">
+                        <h3><span class="flag">🇬🇧</span> Terms</h3>
+                        <p>Terms and Conditions in English</p>
+                    </a>
+
+                    <a href="privacy-fr.html" class="doc-card">
+                        <h3><span class="flag">🇫🇷</span> Confidentialité</h3>
+                        <p>Politique de confidentialité en français</p>
+                    </a>
+
+                    <a href="privacy-en.html" class="doc-card">
+                        <h3><span class="flag">🇬🇧</span> Privacy</h3>
+                        <p>Privacy Policy in English</p>
+                    </a>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>ℹ️ Informations</h2>
+                <p><strong>Éditeur :</strong> CL Consulting SASU</p>
+                <p><strong>SIRET :</strong> 94261399300016</p>
+                <p><strong>Siège social :</strong> 24 rue Jean Paul Pandolfi, 20110 Propriano, France</p>
+                <p><strong>Email :</strong> <a href="mailto:colin.larrue.pro@gmail.com">colin.larrue.pro@gmail.com</a></p>
+                <p style="margin-top: 15px;"><strong>Disponible sur :</strong> Google Play Store</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 CL Consulting SASU - Tous droits réservés</p>
+            <p style="margin-top: 10px;">PyNav est une application tierce pour pypilot (projet open-source de Sean D'Epagnier)</p>
+        </div>
+    </div>
+</body>
+</html>
