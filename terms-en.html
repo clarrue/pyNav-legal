@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - PyNav</title>
+    <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.8; color: #333; background: #f5f5f5; padding: 20px;
+    }
+    .container {
+        max-width: 900px; margin: 0 auto; background: white;
+        padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white; padding: 30px; margin: -40px -40px 40px -40px;
+        border-radius: 10px 10px 0 0;
+    }
+    .back-link {
+        display: inline-block; color: white; text-decoration: none;
+        margin-bottom: 15px; opacity: 0.9;
+    }
+    .back-link:hover { opacity: 1; text-decoration: underline; }
+    h1 { color: white; margin-bottom: 10px; font-size: 2em; }
+    h2 { color: #1e3c72; margin-top: 30px; margin-bottom: 15px;
+         padding-bottom: 10px; border-bottom: 2px solid #e9ecef; }
+    h3 { color: #2a5298; margin-top: 25px; margin-bottom: 12px; }
+    h4 { color: #495057; margin-top: 20px; margin-bottom: 10px; }
+    p { margin-bottom: 15px; text-align: justify; }
+    ul { margin: 15px 0 15px 30px; }
+    li { margin-bottom: 8px; }
+    strong { color: #1e3c72; }
+    a { color: #667eea; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border: none; border-top: 1px solid #e9ecef; margin: 30px 0; }
+    code { background: #f8f9fa; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+    .footer {
+        margin-top: 50px; padding-top: 20px; border-top: 1px solid #e9ecef;
+        text-align: center; color: #6c757d; font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+        .container { padding: 20px; }
+        .header { margin: -20px -20px 20px -20px; padding: 20px; }
+        h1 { font-size: 1.5em; }
+    }
+    @media print {
+        body { background: white; }
+        .container { box-shadow: none; }
+        .back-link { display: none; }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="https://clarrue.github.io/pyNav-legal/" class="back-link">← Back</a>
+            <h1>Terms and Conditions</h1>
+            <p style="opacity:0.85;margin-top:8px">PyNav - CL Consulting SASU</p>
+        </div>
+        <h1 style="color:#1e3c72">TERMS AND CONDITIONS</h1>
+<h2>PyNav</h2>
+
+<strong>Last updated: May 26, 2026</strong>
+
+<hr>
+
+<h2>1. LEGAL INFORMATION</h2>
+
+<strong>Application Publisher:</strong>
+<ul>
+<li>Company name: CL Consulting SASU</li>
+<li>SIRET: 94261399300016</li>
+<li>Registered office: 24 rue Jean Paul Pandolfi, 20110 Propriano, France</li>
+<li>Email: colin.larrue.pro@gmail.com</li>
+</ul>
+
+<strong>Application:</strong> PyNav  
+<strong>Platforms:</strong> Android (Google Play Store) & iOS (Apple App Store)
+
+<hr>
+
+<h2>2. PURPOSE</h2>
+
+<p>These Terms and Conditions (hereinafter "Terms") govern the use of the PyNav mobile application (hereinafter "the Application").</p>
+
+<p>PyNav is a marine application providing:</p>
+
+<ul>
+<li>Professional NMEA data display on tablet (navigation center)</li>
+<li>Remote control of the <strong>pypilot</strong> open-source autopilot system (optional)</li>
+</ul>
+
+<p>The Application can be used independently of pypilot as a standalone NMEA navigation center. It provides:</p>
+<ul>
+<li><strong>Free version</strong>: Access to the pypilot control tab only (current heading, modes, gains, emergency stop). No external NMEA data. Requires a pypilot installation.</li>
+<li><strong>PRO version (launch price: €8.99, regular price: €12.99)</strong>: Complete NMEA navigation center on 10"+ tablet. Usable WITH or WITHOUT pypilot. Only requires a NMEA/WiFi module and a tablet (4 GB RAM minimum).</li>
+</ul>
+
+<p>By downloading and using the Application, the user accepts these Terms without reservation.</p>
+
+<hr>
+
+<h2>3. DEFINITIONS</h2>
+
+<ul>
+<li><strong>Application</strong>: Refers to the PyNav software available on the Google Play Store</li>
+<li><strong>User</strong>: Any person using the Application</li>
+<li><strong>Pypilot</strong>: Open-source autopilot system developed by Sean D'Epagnier</li>
+<li><strong>NMEA</strong>: Standard communication protocol for marine equipment (NMEA 0183 and NMEA 2000)</li>
+<li><strong>Free version</strong>: Pypilot remote control features accessible without payment</li>
+<li><strong>PRO version</strong>: Advanced NMEA display features requiring a one-time purchase</li>
+</ul>
+
+<hr>
+
+<h2>4. TECHNICAL REQUIREMENTS</h2>
+
+<p>Use of the Application strictly requires:</p>
+
+<h3>4.1 Required Hardware</h3>
+<ul>
+<li>An Android smartphone or tablet (version 7.0 minimum recommended)</li>
+<li>A functional and properly configured pypilot installation (Raspberry Pi + motor + sensors)</li>
+<li>A WiFi network allowing communication with the pypilot server</li>
+</ul>
+
+<h3>4.2 Required Skills</h3>
+<p>The User must:</p>
+<ul>
+<li>Possess the necessary knowledge to install, configure, and use pypilot</li>
+<li>Know maritime navigation rules (COLREG)</li>
+<li>Be capable of maintaining their pypilot installation</li>
+<li>Be able to interpret NMEA navigation data</li>
+</ul>
+
+<hr>
+
+<h2>5. NATURE OF THE SERVICE</h2>
+
+<h3>5.1 What the Application IS</h3>
+
+<p>The Application is:</p>
+<ul>
+<li>A <strong>control interface</strong> allowing commands to be sent to an existing pypilot system</li>
+<li>A <strong>reader and display</strong> of NMEA data from navigation equipment</li>
+<li>An <strong>accessory software</strong> facilitating the use of pypilot</li>
+<li>A <strong>complementary tool</strong> to regulatory navigation equipment</li>
+</ul>
+
+<h3>5.2 What the Application IS NOT</h3>
+
+<p>The Application IS NOT:</p>
+<ul>
+<li>An autonomous autopilot system</li>
+<li>Certified or approved navigation equipment</li>
+<li>A substitute for regulatory navigation equipment</li>
+<li>A guarantee of pypilot's proper functioning</li>
+<li>A replacement for the navigator's human judgment</li>
+</ul>
+
+<h3>5.3 Important Clarifications</h3>
+
+<strong>Pypilot:</strong>
+<ul>
+<li>Is an independent open-source project developed by Sean D'Epagnier</li>
+<li>Is provided "as-is" without any warranty (GPLv3 license)</li>
+<li>Is not a certified commercial product for maritime navigation</li>
+<li>Is the sole responsibility of its creator and the open-source community</li>
+</ul>
+
+<strong>The publisher of PyNav:</strong>
+<ul>
+<li>Has no affiliation with the pypilot developer</li>
+<li>Does not manufacture or sell autopilot systems</li>
+<li>Does not guarantee pypilot's operation</li>
+<li>Only provides a software control interface</li>
+</ul>
+
+<hr>
+
+<h2>6. FEATURES</h2>
+
+<h3>6.1 FREE Version</h3>
+
+<p>The free version includes:</p>
+<ul>
+<li>TCP/IP connection to pypilot server</li>
+<li>Complete autopilot remote control</li>
+<li>Heading modification</li>
+<li>Piloting mode change (compass, GPS, wind, nav)</li>
+<li>Pypilot gain and parameter settings</li>
+</ul>
+
+<h3>6.2 PRO Version (€8.99 - One-time purchase)</h3>
+
+<p>The PRO version additionally unlocks:</p>
+<ul>
+<li>Advanced NMEA 0183 and NMEA 2000 data display</li>
+<li>Customizable navigation instruments (compass, speedometer, depth sounder, anemometer, etc.)</li>
+<li>Real-time graphs (speed, heading, wind, depth, etc.)</li>
+<li>Navigation histories and trends</li>
+<li>Multiple customizable dashboards</li>
+<li>Custom alerts (wind, depth)</li>
+<li>Free lifetime updates</li>
+</ul>
+
+<hr>
+
+<h2>7. USER RESPONSIBILITY</h2>
+
+<h3>7.1 Navigation and Safety</h3>
+
+<p>The User acknowledges and accepts that:</p>
+
+<strong>The skipper remains solely responsible for:</strong>
+<ul>
+<li>Navigation and the safety of the vessel and its occupants</li>
+<li>Permanent watch at sea (regulatory obligation)</li>
+<li>Interpretation of navigation data</li>
+<li>Making all navigation decisions</li>
+<li>Compliance with international maritime rules (COLREG)</li>
+</ul>
+
+<strong>The Application does NOT relieve the obligation to:</strong>
+<ul>
+<li>Maintain permanent visual and radar watch</li>
+<li>Have regulatory navigation equipment</li>
+<li>Consult official and up-to-date nautical charts</li>
+<li>Verify navigation data by other means</li>
+<li>Exercise good maritime judgment</li>
+</ul>
+
+<h3>7.2 Installation and Maintenance</h3>
+
+<p>The User commits to:</p>
+<ul>
+<li>Properly install and configure their pypilot system</li>
+<li>Regularly verify the proper functioning of their installation</li>
+<li>Maintain their equipment in good working order</li>
+<li>Not use the Application if pypilot shows malfunctions</li>
+<li>Test the Application under safe conditions before navigational use</li>
+<li>Always have backup manual steering means</li>
+</ul>
+
+<h3>7.3 Appropriate Use</h3>
+
+<p>The User commits to:</p>
+<ul>
+<li>Not use the Application in dangerous conditions (storm, difficult navigation, etc.)</li>
+<li>Not rely solely on the Application for navigation</li>
+<li>Verify commands sent to the autopilot</li>
+<li>Constantly monitor the vessel's behavior</li>
+<li>Immediately stop use in case of anomaly</li>
+<li>Not use the Application if navigation skills are insufficient</li>
+</ul>
+
+<hr>
+
+<h2>8. LIABILITY LIMITATION</h2>
+
+<h3>8.1 Disclaimer of Warranty</h3>
+
+<p>The Application is provided "AS IS" and "AS AVAILABLE" without any warranty, express or implied, including:</p>
+<ul>
+<li>No guarantee of uninterrupted or error-free operation</li>
+<li>No guarantee of displayed data accuracy</li>
+<li>No guarantee of compatibility with all pypilot configurations</li>
+<li>No guarantee of permanent service availability</li>
+</ul>
+
+<h3>8.2 Pypilot Liability</h3>
+
+<p>The publisher cannot be held responsible for:</p>
+<ul>
+<li>Failures, bugs, or malfunctions of pypilot itself</li>
+<li>Incorrect or defective pypilot installation</li>
+<li>Inappropriate pypilot system configuration</li>
+<li>Intrinsic limitations of pypilot as a DIY open-source project</li>
+<li>Pypilot's design decisions or technical choices</li>
+</ul>
+
+<h3>8.3 Navigation Incident Liability</h3>
+
+<p>The publisher disclaims all liability in case of:</p>
+<ul>
+<li><strong>Maritime accidents</strong>: collision, grounding, capsizing, sinking</li>
+<li><strong>Material damage</strong>: vessel damage, equipment damage, transported goods damage</li>
+<li><strong>Bodily harm</strong>: injuries, trauma, death</li>
+<li><strong>Environmental damage</strong>: pollution, ecosystem destruction</li>
+<li><strong>Financial losses</strong>: towing costs, repair costs, loss of operation</li>
+<li><strong>Data loss</strong>: routes, waypoints, navigation parameters</li>
+</ul>
+
+<h3>8.4 Technical Liability</h3>
+
+<p>The publisher cannot be held responsible for:</p>
+<ul>
+<li>Command transmission errors (due to WiFi network, interference, etc.)</li>
+<li>Incompatibility with certain pypilot versions or configurations</li>
+<li>Application software bugs</li>
+<li>Service interruptions (maintenance, update, server failure)</li>
+<li>Network connection loss between Application and pypilot</li>
+<li>NMEA data display errors</li>
+<li>Command transmission latency</li>
+</ul>
+
+<h3>8.5 Force Majeure</h3>
+
+<p>The publisher cannot be held responsible in case of force majeure or events beyond its control: Internet outage, power failure, natural disaster, war, hacking, etc.</p>
+
+<h3>8.6 Liability Cap</h3>
+
+<p>In any event, the publisher's liability, if it were to be held, would be limited to the amount paid by the User for the Application (maximum €8.99 for PRO version, €0 for free version).</p>
+
+<hr>
+
+<h2>9. COMPATIBILITY</h2>
+
+<h3>9.1 Supported Pypilot Versions</h3>
+
+<p>The Application is compatible with:</p>
+<ul>
+<li>Pypilot version 0.x and later</li>
+<li>Standard pypilot communication protocol (TCP/IP)</li>
+</ul>
+
+<h3>9.2 Supported NMEA Sources</h3>
+
+<p>The Application can read NMEA data from:</p>
+<ul>
+<li>The pypilot server itself</li>
+<li>Any NMEA 0183 source connected to the network</li>
+<li>Any NMEA 2000 source via NMEA gateway</li>
+</ul>
+
+<h3>9.3 No Compatibility Guarantee</h3>
+
+<p>The publisher does not guarantee:</p>
+<ul>
+<li>Compatibility with all custom pypilot configurations</li>
+<li>Compatibility with future pypilot versions</li>
+<li>Compatibility with all NMEA peripherals</li>
+<li>Operation on all Android device models</li>
+</ul>
+
+<hr>
+
+<h2>10. LICENSE OF USE</h2>
+
+<h3>10.1 Non-Exclusive License</h3>
+
+<p>The publisher grants the User a <strong>non-exclusive, non-transferable, and revocable</strong> license to use the Application.</p>
+
+<h3>10.2 Restrictions</h3>
+
+<p>The User is prohibited from:</p>
+<ul>
+<li>Copying, modifying, adapting, translating, or creating derivative works of the Application</li>
+<li>Decompiling, disassembling, or attempting to extract source code</li>
+<li>Renting, lending, selling, sublicensing, or distributing the Application</li>
+<li>Using the Application for commercial purposes without authorization</li>
+<li>Circumventing protection or in-app purchase mechanisms</li>
+<li>Using the Application fraudulently or illegally</li>
+</ul>
+
+<h3>10.3 Intellectual Property</h3>
+
+<p>The Application and all its elements (code, design, graphics, texts, etc.) are protected by copyright and remain the exclusive property of CL Consulting SASU.</p>
+
+<strong>Important note:</strong> Pypilot is a separate project under GPLv3 license, property of its author Sean D'Epagnier and the open-source community.
+
+<hr>
+
+<h2>11. PRO VERSION - PURCHASE CONDITIONS</h2>
+
+<h3>11.1 Price and Payment</h3>
+
+<ul>
+<li><strong>Price:</strong> €8.99 including VAT (one-time purchase)</li>
+<li><strong>Payment:</strong> Via Google Play (Android) or Apple App Store (iOS) (credit card, Google Pay, etc.)</li>
+<li><strong>Currency:</strong> Price displayed in User's country currency</li>
+</ul>
+
+<h3>11.2 No Refund</h3>
+
+<p>In accordance with Google Play policy, <strong>no refund is possible</strong> after PRO version activation, except in case of hidden defect or manifest non-conformity.</p>
+
+<p>Users are invited to test the free version before purchasing the PRO version.</p>
+
+<h3>11.3 Permanent Purchase</h3>
+
+<p>PRO version purchase is <strong>permanent and lifetime</strong>:</p>
+<ul>
+<li>No monthly or annual subscription</li>
+<li>No hidden or recurring fees</li>
+<li>Free lifetime updates included</li>
+<li>Usable on all Android devices associated with User's Google account</li>
+</ul>
+
+<h3>11.4 Purchase Restoration</h3>
+
+<p>If the User uninstalls then reinstalls the Application, the PRO version will be automatically restored at no additional cost (same Google account).</p>
+
+<hr>
+
+<h2>11 bis. PRICING POLICY AND LAUNCH OFFER</h2>
+
+<h3>Launch Price</h3>
+
+<p>As part of PyNav's launch, the publisher offers a <strong>temporary launch offer</strong>:</p>
+
+<ul>
+<li><strong>Launch price: €8.99</strong> - valid for the <strong>first 3 months</strong> following the Application's publication date on the stores</li>
+<li><strong>Regular price: €12.99</strong> - applicable after the launch period ends</li>
+</ul>
+
+<h3>Guarantees for Launch Price Buyers</h3>
+
+<p>Users who purchased the PRO version at the <strong>launch price of €8.99</strong> benefit from the following guarantees:</p>
+<ul>
+<li>✅ Lifetime access to all PRO features</li>
+<li>✅ All future free updates included</li>
+<li>✅ No additional charges when regular price takes effect</li>
+<li>✅ Same rights as regular price buyers</li>
+</ul>
+
+<h3>Pricing Transparency</h3>
+
+<p>The publisher commits to:</p>
+<ul>
+<li>Clearly communicating the end date of the launch price</li>
+<li>Never charging launch price buyers again</li>
+<li>Maintaining a stable regular price after the launch period</li>
+</ul>
+
+<hr>
+
+<h2>12. PERSONAL DATA AND PRIVACY</h2>
+
+<h3>12.1 Collected Data</h3>
+
+<strong>The Application transmits NO navigation data to the publisher.</strong>
+
+<p>The only data collected are:</p>
+<ul>
+<li><strong>Local network connection</strong>: Local IP address of pypilot server (stays on local network)</li>
+<li><strong>Purchase identifier</strong>: Google Play token to verify PRO version purchase (managed by Google)</li>
+<li><strong>Crashlytics</strong> (optional): Anonymous error reports to improve Application stability</li>
+</ul>
+
+<h3>12.2 No Sensitive Data Transmission</h3>
+
+<p>The Application does NOT transmit to the publisher:</p>
+<ul>
+<li>GPS positions</li>
+<li>Routes and waypoints</li>
+<li>NMEA data</li>
+<li>Pypilot parameters</li>
+<li>User preferences (stored locally only)</li>
+</ul>
+
+<h3>12.3 GDPR Compliance</h3>
+
+<p>The publisher complies with the General Data Protection Regulation (GDPR).</p>
+
+<p>For any questions regarding your personal data, contact: colin.larrue.pro@gmail.com</p>
+
+<strong>See complete Privacy Policy</strong> for more details.
+
+<hr>
+
+<h2>13. SAFETY WARNINGS</h2>
+
+<h3>13.1 Main Warning</h3>
+
+⚠️ <strong>CRITICAL SAFETY WARNING</strong>
+
+<strong>PyNav and pypilot are navigation AID tools, NOT substitutes for human judgment.</strong>
+
+<ul>
+<li>The skipper remains SOLELY RESPONSIBLE for navigation</li>
+<li>Permanent watch is MANDATORY at sea (international regulation)</li>
+<li>Pypilot is a DIY open-source project WITHOUT maritime certification</li>
+<li>The Application may have bugs, errors, or malfunctions</li>
+<li>NEVER blindly trust an autopilot</li>
+</ul>
+
+<h3>13.2 Dangerous Situations</h3>
+
+<strong>DO NOT use the Application in the following situations:</strong>
+<ul>
+<li>Difficult weather conditions (storm, heavy swell, dense fog)</li>
+<li>Navigation in congested areas (ports, channels, fishing zones)</li>
+<li>Proximity to dangers (rocks, shoals, wrecks)</li>
+<li>Dense maritime traffic or crossing routes</li>
+<li>In case of pypilot malfunction</li>
+<li>If you lack necessary navigation skills</li>
+<li>If you are tired, under influence of alcohol or judgment-altering substances</li>
+</ul>
+
+<h3>13.3 Backup Equipment</h3>
+
+<p>You must ALWAYS have:</p>
+<ul>
+<li>Backup manual steering means (tiller, emergency rudder)</li>
+<li>Up-to-date paper nautical charts</li>
+<li>Magnetic bearing compass</li>
+<li>Emergency communication means (VHF, satellite phone)</li>
+<li>Independent backup GPS</li>
+</ul>
+
+<h3>13.4 Prior Testing</h3>
+
+<p>Before any use in actual navigation:</p>
+<ul>
+<li>Test the Application in port or at anchor</li>
+<li>Verify WiFi connection reliability</li>
+<li>Ensure pypilot responds correctly to commands</li>
+<li>Familiarize yourself with interface and features</li>
+<li>Test the emergency stop button</li>
+</ul>
+
+<hr>
+
+<h2>14. UPDATES</h2>
+
+<h3>14.1 Application Updates</h3>
+
+<p>The publisher may release Application updates to:</p>
+<ul>
+<li>Fix bugs</li>
+<li>Improve performance</li>
+<li>Add new features</li>
+<li>Ensure compatibility with new Android or pypilot versions</li>
+</ul>
+
+<h3>14.2 Free Updates</h3>
+
+<p>All updates are <strong>free</strong> for:</p>
+<ul>
+<li>Free version users</li>
+<li>PRO version buyers (lifetime updates)</li>
+</ul>
+
+<h3>14.3 Update Installation</h3>
+
+<p>Updates are distributed via Google Play Store. The User is responsible for keeping the Application up to date.</p>
+
+<hr>
+
+<h2>15. TERMINATION</h2>
+
+<h3>15.1 By the User</h3>
+
+<p>The User may stop using the Application at any time by uninstalling it.</p>
+
+<strong>Warning:</strong> Uninstalling does NOT entitle a refund of the PRO version.
+
+<h3>15.2 By the Publisher</h3>
+
+<p>The publisher reserves the right to suspend or terminate Application access in case of:</p>
+<ul>
+<li>Violation of these Terms</li>
+<li>Fraudulent or illegal use</li>
+<li>Abusive or harmful behavior</li>
+</ul>
+
+<h3>15.3 Application Discontinuation</h3>
+
+<p>The publisher reserves the right to permanently discontinue the Application with reasonable notice. No refund will be due in this case.</p>
+
+<hr>
+
+<h2>16. APPLICABLE LAW AND JURISDICTION</h2>
+
+<h3>16.1 Applicable Law</h3>
+
+<p>These Terms are governed by <strong>French law</strong>.</p>
+
+<h3>16.2 Competent Jurisdiction</h3>
+
+<p>In case of dispute, and failing amicable resolution, French courts shall have sole jurisdiction.</p>
+
+<p>The competent court will be that of CL Consulting SASU's registered office (Propriano, France) or the consumer's domicile.</p>
+
+<hr>
+
+<h2>17. TERMS MODIFICATIONS</h2>
+
+<p>The publisher reserves the right to modify these Terms at any time.</p>
+
+<p>Users will be informed of modifications via:</p>
+<ul>
+<li>A notification in the Application</li>
+<li>A message on Google Play Store</li>
+</ul>
+
+<p>Continued use of the Application after Terms modification constitutes acceptance of new conditions.</p>
+
+<hr>
+
+<h2>18. CONTACT</h2>
+
+<p>For any questions regarding the Application or these Terms:</p>
+
+<strong>CL Consulting SASU</strong>  
+<p>24 rue Jean Paul Pandolfi  </p>
+<p>20110 Propriano  </p>
+<p>France  </p>
+
+<p>Email: colin.larrue.pro@gmail.com</p>
+
+<hr>
+
+<h2>19. ACCEPTANCE OF TERMS</h2>
+
+<p>By using PyNav, you acknowledge having read, understood, and accepted all of these Terms and Conditions.</p>
+
+<strong>Last updated:</strong> May 16, 2026
+
+<hr>
+
+<strong>CL Consulting SASU - PyNav</strong>  
+<em>Your pypilot navigation companion</em>
+
+        <div class="footer">
+            <p>&copy; 2026 CL Consulting SASU — Tous droits réservés</p>
+            <p style="margin-top:8px">
+                <a href="https://clarrue.github.io/pyNav-legal/">Retour à l'accueil</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
