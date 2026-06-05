@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - PyNav</title>
+    <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.8; color: #333; background: #f5f5f5; padding: 20px;
+    }
+    .container {
+        max-width: 900px; margin: 0 auto; background: white;
+        padding: 40px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .header {
+        background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        color: white; padding: 30px; margin: -40px -40px 40px -40px;
+        border-radius: 10px 10px 0 0;
+    }
+    .back-link {
+        display: inline-block; color: white; text-decoration: none;
+        margin-bottom: 15px; opacity: 0.9;
+    }
+    .back-link:hover { opacity: 1; text-decoration: underline; }
+    h1 { color: white; margin-bottom: 10px; font-size: 2em; }
+    h2 { color: #1e3c72; margin-top: 36px; margin-bottom: 16px;
+         padding-bottom: 10px; border-bottom: 2px solid #e9ecef; }
+    p { margin-bottom: 15px; }
+    ul { margin: 15px 0 15px 30px; }
+    li { margin-bottom: 8px; }
+    strong { color: #1e3c72; }
+    a { color: #667eea; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .contact-box {
+        background: #f0f4ff; border: 2px solid #2a5298;
+        border-radius: 10px; padding: 24px; margin-top: 32px; text-align: center;
+    }
+    .contact-box p { margin: 0; font-size: 1.05em; }
+    .contact-box a { font-size: 1.1em; font-weight: 600; color: #1e3c72; }
+    .faq-item { margin-bottom: 28px; }
+    .faq-item h3 { color: #2a5298; margin-bottom: 8px; font-size: 1em; }
+    .footer {
+        margin-top: 50px; padding-top: 20px; border-top: 1px solid #e9ecef;
+        text-align: center; color: #6c757d; font-size: 0.9em;
+    }
+    @media (max-width: 768px) {
+        .container { padding: 20px; }
+        .header { margin: -20px -20px 20px -20px; padding: 20px; }
+        h1 { font-size: 1.5em; }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="https://clarrue.github.io/pyNav-legal/" class="back-link">← Back</a>
+            <h1>⚓ Support</h1>
+            <p style="opacity:0.85;margin-top:8px">PyNav - CL Consulting SASU</p>
+        </div>
+
+        <p>PyNav is a display and control interface for marine NMEA instruments and the pypilot open-source autopilot. If you need help, the information below covers the most common situations.</p>
+
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <h3>The app does not connect to my equipment</h3>
+            <p>Make sure your phone and the NMEA/pypilot gateway are on the same Wi-Fi network. Check the host IP and port in Settings → Connection. If your gateway only broadcasts over UDP, set the transport to UDP; if it is a direct TCP server (e.g. pypilot), use TCP.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>iOS asks for local network permission</h3>
+            <p>This is expected. PyNav needs access to your local Wi-Fi network to reach your boat's instruments. Tap <strong>Allow</strong> when prompted. If you accidentally denied it, go to iOS Settings → PyNav → Local Network and enable it.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>I purchased PRO but the features are still locked</h3>
+            <p>Go to Settings → Upgrade to PRO and tap <strong>Restore purchases</strong>. Make sure you are signed in with the same Apple ID or Google account used for the original purchase.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>The app crashes or data stops updating</h3>
+            <p>Force-close and reopen the app. If the problem persists, check that your gateway is still running and reachable on the network. You can also try toggling the connection off and on in Settings.</p>
+        </div>
+
+        <div class="faq-item">
+            <h3>PyNav is not compatible with my autopilot / NMEA device</h3>
+            <p>PyNav supports NMEA 0183 (UDP and TCP) and pypilot over TCP. Compatibility with other systems depends on their ability to send standard NMEA sentences. Contact us with your device model and we will help if possible.</p>
+        </div>
+
+        <h2>Contact</h2>
+        <p>For any other question, bug report, or feature request, send an email to:</p>
+
+        <div class="contact-box">
+            <p>We aim to respond within <strong>5 business days</strong>.</p>
+            <p style="margin-top:12px">
+                <a href="mailto:colin.larrue.pro@gmail.com">colin.larrue.pro@gmail.com</a>
+            </p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2026 CL Consulting SASU — All rights reserved</p>
+            <p style="margin-top:8px">
+                <a href="https://clarrue.github.io/pyNav-legal/">Back to legal documents</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
