@@ -114,10 +114,10 @@
 <li>Ces données restent strictement sur votre réseau local WiFi/Bluetooth et ne sont jamais transmises à l'extérieur</li>
 </ul>
 
-<strong>Identifiant d'achat Google Play :</strong>
+<strong>Jeton d'achat in-app (Google Play / App Store) :</strong>
 <ul>
-<li>Si vous achetez la version PRO, Google Play génère un jeton unique pour vérifier votre achat</li>
-<li>Ce jeton est géré par Google, pas par nous</li>
+<li>Si vous achetez la version PRO, Google Play (Android) ou l'App Store (iOS) génère un jeton unique pour vérifier votre achat</li>
+<li>Ce jeton est géré par Google ou Apple, pas par nous</li>
 <li>Nous n'avons accès qu'à la confirmation que vous avez acheté la version PRO</li>
 <li>Aucune information de paiement n'est accessible à l'éditeur</li>
 </ul>
@@ -130,14 +130,14 @@
 <li>Vous pouvez désactiver cette fonctionnalité dans les paramètres de l'Application</li>
 </ul>
 
-<h3>3.3 Permissions Android requises</h3>
+<h3>3.3 Permissions système requises</h3>
 
-<strong>L'Application demande les permissions suivantes :</strong>
+<strong>Permissions Android :</strong>
 
 <strong>INTERNET</strong> (obligatoire) :
 <ul>
 <li>Nécessaire pour se connecter à votre serveur pypilot via WiFi</li>
-<li>Aucune connexion Internet externe n'est établie sauf pour la vérification d'achat Google Play</li>
+<li>Aucune connexion Internet externe n'est établie sauf pour la vérification d'achat</li>
 </ul>
 
 <strong>ACCESS_NETWORK_STATE</strong> (obligatoire) :
@@ -158,11 +158,13 @@
 <li>Géré entièrement par Google Play</li>
 </ul>
 
-<strong>ACCESS_FINE_LOCATION</strong> (optionnel) :
+<strong>Permissions iOS :</strong>
+
+<strong>Accès au réseau local</strong> (obligatoire) :
 <ul>
-<li>Permet d'afficher votre position sur une carte locale si activée</li>
-<li>Cette position est lue depuis les données NMEA de votre équipement, pas depuis le GPS du téléphone</li>
-<li>Aucune position n'est jamais transmise à l'extérieur</li>
+<li>Nécessaire pour se connecter à votre serveur pypilot ou passerelle NMEA sur le réseau WiFi local</li>
+<li>Aucune connexion Internet externe n'est établie sauf pour la vérification d'achat App Store</li>
+<li>iOS vous demandera votre autorisation lors de la première connexion réseau locale de l'Application</li>
 </ul>
 
 <hr>
@@ -231,11 +233,16 @@
 
 <h3>6.2 Sous-traitants</h3>
 
-<strong>Google LLC (États-Unis) :</strong>
+<strong>Google LLC (États-Unis) — Android uniquement :</strong>
 <ul>
 <li><strong>Google Play</strong> : Gestion des achats in-app et vérification des licences</li>
-<li><strong>Firebase Crashlytics</strong> : Collecte anonyme de rapports de crash (si activé)</li>
 <li>Google est certifié Privacy Shield et conforme RGPD</li>
+</ul>
+
+<strong>Apple Inc. (États-Unis) — iOS uniquement :</strong>
+<ul>
+<li><strong>App Store / StoreKit</strong> : Gestion des achats in-app et vérification des licences</li>
+<li>Apple est conforme aux exigences RGPD pour les transferts hors UE</li>
 </ul>
 
 <h3>6.3 Aucun autre tiers</h3>
@@ -414,7 +421,7 @@
 <strong>Notification des modifications :</strong>
 <ul>
 <li>Par notification dans l'Application</li>
-<li>Sur la page Google Play Store</li>
+<li>Sur la page Google Play Store / App Store</li>
 <li>La date de "dernière mise à jour" sera modifiée</li>
 </ul>
 

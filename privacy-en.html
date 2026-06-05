@@ -114,10 +114,10 @@
 <li>This data stays strictly on your local WiFi/Bluetooth network and is never transmitted externally</li>
 </ul>
 
-<strong>Google Play purchase identifier:</strong>
+<strong>In-app purchase token (Google Play / App Store):</strong>
 <ul>
-<li>If you purchase the PRO version, Google Play generates a unique token to verify your purchase</li>
-<li>This token is managed by Google, not by us</li>
+<li>If you purchase the PRO version, Google Play (Android) or the App Store (iOS) generates a unique token to verify your purchase</li>
+<li>This token is managed by Google or Apple, not by us</li>
 <li>We only have access to confirmation that you purchased the PRO version</li>
 <li>No payment information is accessible to the publisher</li>
 </ul>
@@ -130,14 +130,14 @@
 <li>You can disable this feature in Application settings</li>
 </ul>
 
-<h3>3.3 Required Android Permissions</h3>
+<h3>3.3 Required System Permissions</h3>
 
-<strong>The Application requests the following permissions:</strong>
+<strong>Android permissions:</strong>
 
 <strong>INTERNET</strong> (mandatory):
 <ul>
 <li>Necessary to connect to your pypilot server via WiFi</li>
-<li>No external Internet connection is established except for Google Play purchase verification</li>
+<li>No external Internet connection is established except for purchase verification</li>
 </ul>
 
 <strong>ACCESS_NETWORK_STATE</strong> (mandatory):
@@ -158,11 +158,13 @@
 <li>Managed entirely by Google Play</li>
 </ul>
 
-<strong>ACCESS_FINE_LOCATION</strong> (optional):
+<strong>iOS permissions:</strong>
+
+<strong>Local Network Access</strong> (mandatory):
 <ul>
-<li>Allows displaying your position on local map if activated</li>
-<li>This position is read from NMEA data from your equipment, not from phone GPS</li>
-<li>No position is ever transmitted externally</li>
+<li>Necessary to connect to your pypilot server or NMEA gateway on the local WiFi network</li>
+<li>No external Internet connection is established except for App Store purchase verification</li>
+<li>iOS will prompt you the first time the Application attempts a local network connection</li>
 </ul>
 
 <hr>
@@ -231,11 +233,16 @@
 
 <h3>6.2 Subprocessors</h3>
 
-<strong>Google LLC (United States):</strong>
+<strong>Google LLC (United States) — Android only:</strong>
 <ul>
 <li><strong>Google Play</strong>: In-app purchase management and license verification</li>
-<li><strong>Firebase Crashlytics</strong>: Anonymous crash report collection (if enabled)</li>
 <li>Google is Privacy Shield certified and GDPR compliant</li>
+</ul>
+
+<strong>Apple Inc. (United States) — iOS only:</strong>
+<ul>
+<li><strong>App Store / StoreKit</strong>: In-app purchase management and license verification</li>
+<li>Apple complies with GDPR requirements for non-EU transfers</li>
 </ul>
 
 <h3>6.3 No Other Third Parties</h3>
@@ -414,7 +421,7 @@
 <strong>Modification notification:</strong>
 <ul>
 <li>By notification in Application</li>
-<li>On Google Play Store page</li>
+<li>On Google Play Store / App Store page</li>
 <li>"Last updated" date will be modified</li>
 </ul>
 
